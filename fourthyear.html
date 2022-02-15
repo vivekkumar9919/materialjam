@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Fourth Year</title>
+
+  <style>
+
+    /*  */
+    body {
+      overflow-x: hidden;
+    }
+
+
+    /* navabr */
+    .navbarbox {
+      background-color: rgb(160, 154, 154);
+    }
+
+    .editnav {
+      font-size: 20px;
+      color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .editnavheading {
+      margin-right: 50px;
+      font-size: 22px;
+      padding-left: 15px;
+      color: white;
+    }
+
+    .editnav:hover {
+      color: whitesmoke;
+      /* font-size: 50px; */
+      background-color: rgb(160, 180, 235);
+      border-radius: 8px;
+    }
+
+
+    /* carousel */
+    .carousel-inner,
+    .carousel-item {
+      height: 400px;
+    }
+
+    /* third year heading */
+    #thirdyearheading{
+      margin-top: 20px;
+      font-size: 50px;
+      text-align: center;
+    }
+
+
+
+    #container {
+      border: 2px solid red;
+      /* width: 100%; */
+      /* height: 500px;
+          border-bottom-right-radius: 300px;
+          border-bottom-left-radius: 300px; */
+    }
+
+
+    /* document container */
+    .document_container {
+      margin-top: 40px;
+      /* border: 3px solid black; */
+      width: 60%;
+    }
+
+
+    /* footer */
+    .footerclass{
+      background-color: rgb(160, 154, 154);
+      margin-top: 50px;
+      color: red;
+    }
+
+    .footerbox{
+      margin-top: 50px;
+      margin-bottom: 30px;
+      /* border: 2px solid red; */
+    }
+    
+    .card-body{
+      color: white;
+      background-color: rgb(160, 154, 154);
+      border: 0px;
+      /* border: 2px solid red; */
+    }
+    .card{
+      border: 0px;
+    }
+
+    #contactidfooter{
+      border: 0px solid blue;
+      background-color: blue;
+      color: white;
+      font-size: 20px;
+      margin-top: 15px;
+      border-radius: 5px;
+      padding-left: 9px;
+      padding-right: 9px;
+      padding-top: 4px;
+      padding-bottom: 7px;
+    }
+    #contactidfooter:hover{
+      background-color: rgb(70, 70, 245);
+    }
+
+
+
+
+    /* media queries */
+
+    @media only screen and (max-width: 768px) {
+      /* body {
+      overflow-x: hidden;
+    } */
+      .document_container {
+        /* margin-left: 5px; */
+        margin-top: 40px;
+        /* border: 3px solid green; */
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 1024px) and (min-width: 769px) {
+      /* body {
+      overflow-x: hidden;
+    } */
+      .document_container {
+        /* margin-left: 5px; */
+        margin-top: 40px;
+        /* border: 3px solid blue; */
+        width: 85%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light  navbarbox">
+    <div class="container-fluid">
+      <a class="navbar-brand editnavheading" href="#" style="color:white;">MaterialJam</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item editnav" style="margin-right: 40px; ">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color:white;">Home</a>
+          </li>
+          <!-- <li class="nav-item editnav" style="margin-right: 40px;">
+            <a class="nav-link active" aria-current="page" href="#" style="color:white;">Request Us</a>
+          </li> -->
+          <li class="nav-item editnav" style="margin-right: 40px;">
+            <a class="nav-link active" aria-current="page" href="contactus.html" style="color:white;">Contact Us</a>
+          </li>
+          <li class="nav-item editnav" style="margin-right: 40px;">
+            <a class="nav-link active" aria-current="page" href="feedbackform.html" style="color:white;">Feedback</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- below the navbar -->
+  <!-- <div class="container-fluid" id="container">
+    Content here
+  </div> -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner ">
+        <div class="carousel-item active ">
+            <img src="img5.jpg" class="d-block w-100 " alt="img1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>MaterialJam</h5>
+                <!-- <p>Some representative placeholder content for the first slide.</p> -->
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img2.jpg" class="d-block w-100" alt="img2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>MaterialJam</h5>
+                <!-- <p>Some representative placeholder content for the second slide.</p> -->
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img3.jpg" class="d-block w-100" alt="img3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>MaterialJam</h5>
+                <!-- <p>Some representative placeholder content for the third slide.</p> -->
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+  <div id="thirdyearheading">
+    Fourth Year
+  </div>
+
+  <!-- document container -->
+  <div class="container-sm document_container">
+
+    <div class="accordion" id="accordionExample">
+     
+      <!-- syllabus -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Syllabus
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+            <h5>Computer Science and Engineering</h5>
+            <ul class="list-group list-group-flush">
+              <a href="#">
+                <li class="list-group-item" style="color: blue; border: 0px;">Download</li>
+              </a>
+
+              <h5>Electronic and Communaction Engineering</h5>
+              <ul class="list-group list-group-flush">
+                <a href="#">
+                  <li class="list-group-item" style="color: blue; border: 0px;">Download</li>
+                </a>
+           
+            </ul>
+          </div>
+        </div>
+      </div>
+
+       <!--book  -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Books
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              <h5>Compute Science And Engineering</h5>
+              <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+              <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+              <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+              <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+              <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+              <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+              <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+              <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+              <h5>Electronic And Communaction Engineering</h5>
+              <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+              <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+              <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+              <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+              <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+              <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+              <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+              <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- sample div -->
+      <!-- <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+            Books
+          </button>
+        </h2>
+        <div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+            plugin adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div> -->
+
+      <!-- semester paper -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Quantum
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <h5>Electronic And Communaction Engineering</h5>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- sessional paper -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+            Sessional Paper
+          </button>
+        </h2>
+        <div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+             
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <h5>Electronic And Communaction Engineering</h5>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- semester paper -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+            Semester Paper
+          </button>
+        </h2>
+        <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+               
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <h5>Electronic And Communaction Engineering</h5>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+            <a href=""><li class="list-group-item" style="color: blue; border: 0px;">Book name1</li></a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- footer -->
+  <footer>
+    <div class="container-fluid footerclass">
+    
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+
+        <div class="col footerbox" >
+          <div class="card h-100">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h4 class="card-title">About us</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, inventore? Quam, minus.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col footerbox">
+          <div class="card h-100">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h4 class="card-title">Services</h4>
+              <!-- <p class="card-text">Syllabus</p> -->
+              <div>Syllabus</div>
+              <div>Book</div>
+              <div>Quantum</div>
+              <div>Sessional Paper</div>
+              <div>Semester Paper</div>
+              <div>Placement material</div>
+              <div>Gate material</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col footerbox">
+          <div class="card h-100">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h4 class="card-title">Feedback</h4>
+              <p class="card-text">Did You find mistake in interface or text? Or do you know how to improve materialJam. Feel free to send suggestion.</p>
+              <a href="feedbackform.html">
+                  <button type="button" class="btn btn-primary btn-lg">Feedback</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+         <div class="col footerbox">
+          <div class="card h-100">
+             
+            <div class="card-body">
+              <h5 class="card-title">Quick link</h5>
+              <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              <a href="index.html"><div style="color: white;">Home</div></a>
+              <a href="firstyear.html"><div style="color: white;">First Year</div></a>
+              <a href="secondyear.html"><div style="color: white;">Second Year</div></a>
+              <a href="thirdyear.html"><div style="color: white;">Third Year</div></a>
+              <a href="fourthyear.html"><div style="color: white;">Fourth Year</div></a>
+              <a href="contactus.html"><button id="contactidfooter">Contact us</button></a>
+              
+
+            </div>
+          </div>
+        </div> 
+
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
